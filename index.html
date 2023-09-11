@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Composition</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+      display: grid;
+      background-color: black;
+      height: 450px;
+      width: 600px;
+      grid-template-columns: repeat(12,50px);
+      grid-template-rows: repeat(9,50px);
+    }
+    .one
+    {
+      background-color: #E72F24 ;
+      grid-row:1/7;
+      grid-column: 1/8;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .two{
+      background-color: #EFDD6F;
+      grid-row: 1/5;
+      grid-column: 8/13;
+      margin-top: 10px;
+      margin-right: 10px;
+    }
+    .three{
+      background-color: yellow;
+      grid-area:7/1/10/6;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    .four{
+      background-color: #EFDD6F;
+      grid-area:7/6/8/8 ;
+      margin-top:10px;
+      margin-right: 10px;
+      
+    }
+    .five{
+      background-color: orange;
+      grid-area: 8/6/10/10;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+    .six{
+      background-color: white;
+      grid-area: 5/8/8/10;
+      margin-top: 10px;
+      
+    }
+    .seven{
+      background-color:lightblue;
+      grid-area: 5/10/10/13;
+      margin-top: 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+   
+   
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+    <div class="five"></div>
+    <div class="six"></div>
+    <div class="seven"></div>
+  </div>
+</body>
+
+</html>
+
+
